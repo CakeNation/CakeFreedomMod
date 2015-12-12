@@ -3,12 +3,12 @@ package me.StevenLawson.TotalFreedomMod;
 import me.StevenLawson.TotalFreedomMod.Config.TFM_ConfigEntry;
 import static me.StevenLawson.TotalFreedomMod.TFM_Util.COOWNER;
 import static me.StevenLawson.TotalFreedomMod.TFM_Util.DEVELOPERS;
-import static me.StevenLawson.TotalFreedomMod.TFM_Util.EXECUTIVES;
 import static me.StevenLawson.TotalFreedomMod.TFM_Util.MOWNER;
 import static me.StevenLawson.TotalFreedomMod.TFM_Util.SYS;
 import static me.StevenLawson.TotalFreedomMod.TFM_Util.LEADDEV;
 import static me.StevenLawson.TotalFreedomMod.TFM_Util.STAFFMNGER;
 import static me.StevenLawson.TotalFreedomMod.TFM_Util.HEADADM;
+import static me.StevenLawson.TotalFreedomMod.TFM_Util.TF_DEVELOPERS;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -21,9 +21,6 @@ public enum TFM_PlayerRank
     IMPOSTOR("an " + ChatColor.YELLOW + ChatColor.UNDERLINE + "Impostor", ChatColor.translateAlternateColorCodes('&', "&8[&e&nIMP&8]&9")),
     NON_OP("a " + ChatColor.GREEN + "Non-OP", ChatColor.GREEN.toString()),
     OP("an " + ChatColor.RED + "OP", ChatColor.translateAlternateColorCodes('&', "&8[&cOP&8]&9")),
-    LEAD_SPECIALIST("the " + ChatColor.GREEN + "Lead Specialist", ChatColor.translateAlternateColorCodes('&', "&8[&aL&7-&aSpecialist&8]&9")),
-    LEAD_EXECUTIVE("the " + ChatColor.YELLOW + "Lead Executive", ChatColor.translateAlternateColorCodes('&', "&8[&eL&7-&eExecutive&8]&9")),
-    SPECIALIST("a " + ChatColor.GREEN + "Specialist", ChatColor.translateAlternateColorCodes('&', "&8[&aSpecialist&8]&9")),
     SUPER("a " + ChatColor.GOLD + "Super Admin", ChatColor.translateAlternateColorCodes('&', "&8[&bSuper Admin&8]&9")),
     TELNET("a " + ChatColor.DARK_GREEN + "Super Telnet Admin", ChatColor.translateAlternateColorCodes('&', "&8[&2Telnet Admin&8]&9")),
     SENIOR("a " + ChatColor.LIGHT_PURPLE + "Senior Admin",ChatColor.translateAlternateColorCodes('&', "&8[&dSenior Admin&8]&9")),
@@ -96,11 +93,6 @@ public enum TFM_PlayerRank
             return SYS_ADMIN;
         }
 
-        else if (EXECUTIVES.contains(sender.getName()))
-        {
-            return EXEC;
-        }
-
         else if (COOWNER.contains(sender.getName()))
         {
             return CO_OWNER;
@@ -136,15 +128,6 @@ public enum TFM_PlayerRank
             {
                 return MODERATORS;
             }
-            if (TFM_ConfigEntry.SERVER_LEADSPEC.getList().contains(sender.getName()))
-            {
-                return LEAD_SPECIALIST;
-            }
-            if (TFM_ConfigEntry.SERVER_LEADEXE.getList().contains(sender.getName()))
-            {
-                return LEAD_EXECUTIVE;
-            }            
-
             if (entry.isSeniorAdmin())
             {
                 rank = SENIOR;
