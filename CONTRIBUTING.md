@@ -1,12 +1,12 @@
-# Contributing to iRedemptFreedomMod #
-iRedemptFreedomMod is a Spigot server plugin designed primarily to support the [Official iRedemptFreedomMod Minecraft Server](http://iredemptfreedom.boards.net/). However, it can be used in a variety of other configurations with minimal fuss.
+# Contributing to CakeFreedomMod #
+CakeFreedomMod is a Spigot server plugin designed primarily to support the [Official CakeFreedomMod Minecraft Server](http://CakeFreedom.boards.net/). However, it can be used in a variety of other configurations with minimal fuss.
 
 For those who wish to contribute, we encourage you to fork the repository and submit pull requests. Below you will find guidelines that explain this process in further detail.
 
 ## Quick Guide ##
-1. Create or find an issue on our [Issue Tracker](https://github.com/iRedemptFreedom/iRedemptFreedomMod/issues).
-2. Does your change fits iRedemptFreedomMod's goals?
-3. Fork iRedemptFreedomMod if you haven't done so already.
+1. Create or find an issue on our [Issue Tracker](https://github.com/CakeFreedom/CakeFreedomMod/issues).
+2. Does your change fits CakeFreedomMod's goals?
+3. Fork CakeFreedomMod if you haven't done so already.
 4. Make a branch dedicated to your change.
 5. Make your change.
 6. Commit your change according to the [committing guidelines](#committing-your-changes).
@@ -17,17 +17,17 @@ For those who wish to contribute, we encourage you to fork the repository and su
 * If the issue does not exist already, create it.
   * Clearly describe the issue.
   * If your issue is a bug, describe the steps needed to reproduce it.
-  * If your issue is a feature request, ensure it fits iRedemptFreedomMod's goals and describe your feature in detail.
+  * If your issue is a feature request, ensure it fits CakeFreedomMod's goals and describe your feature in detail.
 * Fork the repository on GitHub.
 
-## Does the change fit iRedemptFreedomMod's goals? ##
-As a rough guideline, ask yourself the following questions to determine if your proposed change fits the iRedemptFreedomMod project's goals. Please remember that this is only a rough guideline and may or may not reflect the definitive answer to this question.
+## Does the change fit CakeFreedomMod's goals? ##
+As a rough guideline, ask yourself the following questions to determine if your proposed change fits the CakeFreedomMod project's goals. Please remember that this is only a rough guideline and may or may not reflect the definitive answer to this question.
 
 * Is the change in line with the principles of "iRedempt Freedom"?
-  iRedemptFreedom is a freedom-based server. We don't normally make changes that restrict players unless absolutely necessary.
+  CakeFreedom is a freedom-based server. We don't normally make changes that restrict players unless absolutely necessary.
 
-* Is the change directed towards the iRedemptFreedom server?
-  Changes must be directed towards the iRedemptFreedom server. Changes such as adding ranks, adding the name of other iRedemptFreedom-like servers will not likely be accepted.
+* Is the change directed towards the CakeFreedom server?
+  Changes must be directed towards the CakeFreedom server. Changes such as adding ranks, adding the name of other CakeFreedom-like servers will not likely be accepted.
 
 * Does the change add a feature that involves micromanagement?
   Pull requests that involve adding a micromanagement feature will likely not be accepted. This includes shorthands for multiple commands.
@@ -90,6 +90,6 @@ meaning you can't remove your current IP or an IP that doesn't belong to you.
 * Please do not spread your contribution over several pull-requests.
 
 ## Additional Resources ##
-* [iRedemptFreedom information](http://iredemptfreedom.board.net)
+* [CakeFreedom information](http://CakeFreedom.board.net)
 * [General GitHub documentation](http://help.github.com/)
 * [GitHub pull request documentation](http://help.github.com/send-pull-requests/)
