@@ -901,17 +901,6 @@ public class TFM_PlayerListener implements Listener
             afterNameSet(player);
             return;
         }        
-        if (TFM_Util.EXECUTIVES.contains(player.getName()))
-        {
-            player.sendMessage(ChatColor.GOLD + "Welcome, " + player.getName() + "!");
-            player.sendMessage(ChatColor.GOLD + "You are currently a " + ChatColor.YELLOW + "Executive");
-            player.sendMessage(ChatColor.GRAY + "Haven't joined our boards yet? You need to join!");             
-            TFM_PlayerData.getPlayerData(player).setCommandSpy(true);
-            player.setPlayerListName(ChatColor.YELLOW + name);
-            TFM_PlayerData.getPlayerData(player).setTag("&8[&eExecutive&8]");
-            afterNameSet(player);
-            return;
-        }
         if (TFM_Util.HEADADM.contains(player.getName()))
         {
             player.sendMessage(ChatColor.GOLD + "Welcome, " + player.getName() + "!");
@@ -923,17 +912,6 @@ public class TFM_PlayerListener implements Listener
             afterNameSet(player);
             return;
         }        
-        if (TFM_Util.SPECIALISTS.contains(player.getName()))
-        {
-            player.sendMessage(ChatColor.DARK_GREEN + "Welcome, " + player.getName() + "!");
-            player.sendMessage(ChatColor.DARK_GREEN + "You are currently a " + ChatColor.GREEN + "Specialist");
-            player.sendMessage(ChatColor.GRAY + "Haven't joined our boards yet? You need to join!");             
-            TFM_PlayerData.getPlayerData(player).setCommandSpy(true);
-            player.setPlayerListName(ChatColor.GREEN + name);
-            TFM_PlayerData.getPlayerData(player).setTag("&8[&aSpecialist&8]");
-            afterNameSet(player);
-            return;
-        }
         if (TFM_Util.COOWNER.contains(player.getName()))
         {
             player.sendMessage(ChatColor.DARK_BLUE + "Welcome, " + player.getName() + "!");
@@ -977,22 +955,6 @@ public class TFM_PlayerListener implements Listener
                 afterNameSet(player);
                 return;
             }
-            if (TFM_ConfigEntry.SERVER_LEADSPEC.getList().contains(name))
-            {
-                TFM_PlayerData.getPlayerData(player).setCommandSpy(true);
-                player.setPlayerListName(ChatColor.GREEN + name);
-                TFM_PlayerData.getPlayerData(player).setTag("&8[&aLead Specialist&8]");
-                afterNameSet(player);
-                return;
-            }
-            if (TFM_ConfigEntry.SERVER_LEADEXE.getList().contains(name))
-            {
-                TFM_PlayerData.getPlayerData(player).setCommandSpy(true);
-                player.setPlayerListName(ChatColor.YELLOW + name);
-                TFM_PlayerData.getPlayerData(player).setTag("&8[&eLead Executive&8]");
-                afterNameSet(player);
-                return;
-            }            
             else if (TFM_AdminList.isSeniorAdmin(player))
             {                
                 TFM_PlayerData.getPlayerData(player).setCommandSpy(true);
