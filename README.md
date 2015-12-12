@@ -1,4 +1,4 @@
-# iRedemptFreedomMod #
+# CakeFreedom #
 
 iRedemptFreedomMod is a CraftBukkit server plugin designed primarily to support the [Official CakeNation Minecraft Server](http://cakenation.xyz/). However, you are more than welcome to adapt the source for your own server.
 
