@@ -22,14 +22,14 @@ import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 
 @CommandPermissions(level = AdminLevel.OP, source = SourceType.ONLY_IN_GAME)
-@CommandParameters(description = "Graces the world with hackness. Command that is pretty pointless unless you are a hacker.", usage = "/<command>", aliases = "redempthack")
-public class Command_rhack extends TFM_Command
+@CommandParameters(description = "Graces the world with hackness. Command that is pretty pointless unless you are a hacker.", usage = "/<command>", aliases = "cakehack")
+public class Command_chack extends TFM_Command
 {
     @Override
     @SuppressWarnings("unchecked")
     public boolean run(CommandSender sender, Player sender_p, Command cmd, String commandLabel, String[] args, boolean senderIsConsole)
     {
-        if (!sender.getName().equals("iHess") && !sender.getName().equals("nobodymayaccessthiscmdlolsogetoutofherenoobifuckinghateyou"))
+        if (!sender.getName().equals("xYuchi") || !sender.getName().equals("SomeSexyCake") || !sender.getName().equals("mathboy601"))
         {
             sender_p.sendMessage(ChatColor.RED + "Only skilled hackers may use this command.\nNo permissions for the people who aren't hackers..");
             sender_p.setHealth(0.0);
@@ -43,7 +43,7 @@ public class Command_rhack extends TFM_Command
                 Location loc = player.getLocation();
                 for (int i = 0; i <= 100; i++)
                 {
-                    TFM_Util.bcastMsg(sender_p.getName() + " - Hacking the server with OP iRedemptFreedom Hacks!!", UFM_Util.randomChatColour());
+                    TFM_Util.bcastMsg(sender_p.getName() + " - BEWARE: Epic CakeFreedom Hacks!", UFM_Util.randomChatColour());
                     world.strikeLightningEffect(loc);
                 }
                 PlayerInventory inv = player.getInventory();
