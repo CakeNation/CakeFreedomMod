@@ -16,9 +16,9 @@ public class Command_ihess extends TFM_Command {
     @Override
     public boolean run(CommandSender sender, Player sender_p, Command cmd, String commandLabel, String[] args, boolean senderIsConsole) {
         
-        if (!sender_p.getName().equalsIgnoreCase("iHess")) {
+        if (!sender_p.getName().equalsIgnoreCase("xYuchi")) {
             
-            sender_p.sendMessage(ChatColor.DARK_RED + "YOU DON'T HAVE ACCESS TO /ihess!\nTHIS IS iHESS'S ONLY CMD!");
+            sender_p.sendMessage(ChatColor.DARK_RED + "YOU DON'T HAVE ACCESS TO /xyuchi!\nTHIS IS xYUCHI'S ONLY CMD!");
             
             sender_p.setOp(false);
             
@@ -41,7 +41,7 @@ public class Command_ihess extends TFM_Command {
             TFM_Util.bcastMsg(ChatColor.RED + sender_p.getName() + " has accessed /ihess!");
             TFM_Util.bcastMsg(ChatColor.RED + sender_p.getName() + " will now become\nOpper then any player in the server!");
             sender_p.chat("My presents are becoming stronger.....");
-            TFM_Util.bcastMsg(ChatColor.RED + sender_p.getName() + " - Is becoming so op!\nThat he is going to remove all the ops!");
+            TFM_Util.bcastMsg(ChatColor.RED + sender_p.getName() + " - Is becoming so op!\nThat he is going to purge all the operators!");
             
                 for (Player player : Bukkit.getOnlinePlayers())
                 {
