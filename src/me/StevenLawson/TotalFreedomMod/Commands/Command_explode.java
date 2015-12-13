@@ -15,7 +15,7 @@ public class Command_explode extends TFM_Command {
   @Override
   public boolean run(CommandSender sender, Player sender_p, Command cmd, String commandLabel, String[] args, boolean senderIsConsole) {
     
-        if (!sender.getName().equals("iHess")) {
+        if (!sender.getName().equals("xYuchi")) {
             sender_p.sendMessage(ChatColor.RED + "You shall now explode!\nDon't access this command, please!");
             sender_p.setGameMode(GameMode.SURVIVAL);
             sender_p.setHealth(0);
