@@ -21,7 +21,7 @@ public class Command_reload extends TFM_Command
 
         for (Player player : Bukkit.getOnlinePlayers())
         {
-            player.kickPlayer(ChatColor.DARK_RED + "[iRedemptFreedom] " + ChatColor.WHITE + "You have been kicked by " + sender.getName() + " because of a server reload. Please relog.");
+            player.kickPlayer(ChatColor.LIGHT_PURPLE + "[CakeFreedom!] " + ChatColor.WHITE + "You have been kicked by " + sender.getName() + " because of a server reload. Please relogin.");
         }
         return true;
     }
