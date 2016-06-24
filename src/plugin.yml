@@ -3,7 +3,7 @@ main: me.StevenLawson.TotalFreedomMod.TotalFreedomMod
 version: 1.0
 description: Plugin for the Total Freedom server.
 softdepend: [BukkitTelnet, WorldEdit, Essentials]
-authors: [Madgeek1450, Prozza, CakeNation]
+authors: [Madgeek1450, Prozza, Impolse, XGreenPlayz12, CakeNation]
 
 # Plugin.YML (YAML) is no longer used to define commands
 # due to CommandParameters, CommandPermissions, and TFM_Command
